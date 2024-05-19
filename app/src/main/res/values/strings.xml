@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">step_counter_app_kotlin</string>
+    <string name="history">Historia</string>
+    <string name="goals">Cele</string>
+    <string name="home">Dom</string>
+    <string name="akty">Aktywnosc</string>
+    <string name="kcal">Kalorie</string>
+</resources>

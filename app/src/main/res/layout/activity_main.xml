@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kcal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="-475dp"
+        android:layout_marginEnd="67dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Kliknij START, aby zacząć liczyć kroki"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepsProgressBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_button_start"
+        android:fontFamily="@font/audiowide"
+        android:text="START"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_button_stop"
+        android:fontFamily="@font/audiowide"
+        android:text="STOP"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/stepsCountTextView"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="102dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/goalStepsTextView"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepsCountTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Cel: 0 kroków"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/stepsProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="369dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/rounded_button_start"
+        android:progressDrawable="@drawable/progress_bar" />
+
+    <ImageView
+        android:id="@+id/akty"
+        android:layout_width="122dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/stopButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/akty"
+        android:src="@drawable/akty" />
+
+    <ImageView
+        android:id="@+id/kcal"
+        android:layout_width="122dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/stopButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/kcal"
+        android:src="@drawable/kcal" />
+
+    <TextView
+        android:id="@+id/activityTimeTextView"
+        android:layout_width="196dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/akty"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Czas aktywności:
+         0 min"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/caloriesBurnedTextView"
+        android:layout_width="176dp"
+        android:layout_height="108dp"
+        android:layout_below="@+id/kcal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Kalorie spalone:
+         0 kcal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/navigationMenu"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/historyIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/history"
+            android:src="@drawable/czas" />
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            android:src="@drawable/homev2" />
+
+        <ImageView
+            android:id="@+id/goalsIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/goals"
+            android:src="@drawable/goal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
